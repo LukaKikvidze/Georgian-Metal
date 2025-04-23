@@ -23,6 +23,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule] // <<< ეს არის ის რაც გაკლდა
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}
