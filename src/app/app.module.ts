@@ -12,6 +12,8 @@ import { ContactModule } from './pages/contact/contact.module';
 import { RouterModule } from '@angular/router';
 import {CareerModule} from './pages/career/career.module';
 import {GalleryModule} from './pages/gallery/gallery.module';
+import {ProductDetailModule} from './pages/products/product-detail/product-detail.module';
+import {ProductsModule} from './pages/products/products.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import {GalleryModule} from './pages/gallery/gallery.module';
     FooterModule,
     RouterModule,
     CareerModule,
-    GalleryModule
+    GalleryModule,
+    ProductDetailModule,
+    ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,6 +8,7 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { CareerComponent } from './pages/career/career.component';
 import { QualityComponent } from './pages/quality/quality.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { ProductDetailComponent } from './pages/products/product-detail/product-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,14 @@ const routes: Routes = [
   { path: 'career', component: CareerComponent },
   { path: 'quality', component: QualityComponent },
   { path: 'products', component: ProductsComponent },
+  //TESTING
+  { path: 'products', component: ProductsComponent },
+  { path: 'products/:id', component: ProductDetailComponent },
+  { path: '', redirectTo: '/products', pathMatch: 'full' },
+  //TESTING2
+  { path: 'product-detail/:id', component: ProductDetailComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: '', redirectTo: '/products', pathMatch: 'full' }
 ];
 
 @NgModule({

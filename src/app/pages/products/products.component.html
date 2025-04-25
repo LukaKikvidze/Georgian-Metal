@@ -1,1 +1,8 @@
-<p>products works!</p>
+<div class="products-container">
+  <div *ngFor="let product of products" class="product-card">
+    <img [src]="product.image" alt="{{ product.title }}" />
+    <h2>{{ product.title }}</h2>
+    <p>{{ product.description }}</p>
+    <button (click)="viewDetails(product.id)">იხილეთ სრულად</button>
+  </div>
+</div>
