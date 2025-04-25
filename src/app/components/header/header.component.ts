@@ -4,8 +4,16 @@ import { Component } from '@angular/core';
   selector: 'app-header',
   standalone: false,
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  isMenuOpen: boolean = false;
 
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
+  }
 }
