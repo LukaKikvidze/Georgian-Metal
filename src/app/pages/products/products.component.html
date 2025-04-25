@@ -1,8 +1,8 @@
 <div class="products-container">
-  <div *ngFor="let product of products" class="product-card">
-    <img [src]="product.image" alt="{{ product.title }}" />
-    <h2>{{ product.title }}</h2>
-    <p>{{ product.description }}</p>
-    <button (click)="viewDetails(product.id)">იხილეთ სრულად</button>
+  <div class="product-card" *ngFor="let product of products">
+    <img [src]="product.image" alt="{{ product.title }}">
+    <h3 class="product-title">{{ product.title }}</h3>
+    <p class="product-description">{{ product.description }}</p>
+    <button [routerLink]="['/product-detail', product.id]">იხილეთ სრულად</button>
   </div>
 </div>

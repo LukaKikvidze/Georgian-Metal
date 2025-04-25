@@ -1,36 +1,38 @@
 .product-detail {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 4rem auto; /* ძაან მსუბუქი დაშორება header-თან */
+  padding: 2rem;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.product-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 1rem;
+.product-detail h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.product-description {
+.product-detail img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-detail p {
   font-size: 1.1rem;
-  color: #444;
-  margin-top: 1.5rem;
   line-height: 1.6;
-  padding: 0 1rem;
+  color: #333;
 }
 
 .back-button {
+  margin-top: 2rem;
   background-color: #007bff;
   color: white;
-  border: none;
   padding: 0.6rem 1.2rem;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 2rem;
 }
 
 .back-button:hover {

@@ -31,6 +31,20 @@ export class ProductsComponent {
       description: 'მცირე აღწერა პროდუქტის შესახებ 2...',
       fullDescription: 'სრული აღწერა პროდუქტის შესახებ 2...',
     },
+    {
+      id: 3,
+      title: 'პროდუქტი 3',
+      image: 'assets/images/product3.jpg',
+      description: 'მცირე აღწერა პროდუქტის შესახებ 3...',
+      fullDescription: 'სრული აღწერა პროდუქტის შესახებ 3...',
+    },
+    {
+      id: 4,
+      title: 'პროდუქტი 4',
+      image: 'assets/images/product4.jpg',
+      description: 'მცირე აღწერა პროდუქტის შესახებ 4...',
+      fullDescription: 'სრული აღწერა პროდუქტის შესახებ 4...',
+    },
   ];
 
   constructor(private router: Router) {}
