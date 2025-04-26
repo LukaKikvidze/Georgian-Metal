@@ -1,11 +1,14 @@
-<div class="product-detail">
-  <div *ngIf="product">
-    <h1>{{ product.title }}</h1>
+<div class="product-detail-container">
+  <div *ngIf="product" class="product-card">
     <img [src]="product.image" alt="{{ product.title }}" class="product-image"/>
-    <p class="product-description">{{ product.description }}</p>
-    <button routerLink="/products" class="back-button">უკან დაბრუნება</button> <!-- Added back button -->
+    <div class="product-info">
+      <h1 class="product-title">{{ product.title }}</h1>
+      <p class="product-description">{{ product.description }}</p>
+      <button routerLink="/products" class="back-button">← უკან დაბრუნება</button>
+    </div>
   </div>
-  <div *ngIf="!product">
-    <p>Loading product details...</p>
+
+  <div *ngIf="!product" class="loading">
+    <p>პროდუქტის დეტალების ჩატვირთვა...</p>
   </div>
 </div>

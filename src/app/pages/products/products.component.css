@@ -1,49 +1,73 @@
 .products-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;  /* ცენტრში გაშლა */
-  padding: 2rem;
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;  /* ცენტრში გამწყვდევა */
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
 .product-card {
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  width: 100%;
-  max-width: 350px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .product-card img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 220px;
+  object-fit: cover;
 }
 
-.product-card .product-title {
-  font-size: 1.5rem;
-  margin-top: 1rem;
+.product-info {
+  padding: 20px;
 }
 
-.product-card .product-description {
-  color: #555;
+.product-info h3 {
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.product-info p {
   font-size: 1rem;
-  margin: 1rem 0;
+  color: #666;
+  margin-bottom: 20px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.product-card button {
-  background-color: #007bff;
-  color: white;
-  padding: 0.6rem 1.2rem;
+.product-info button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 50px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.product-card button:hover {
-  background-color: #0056b3;
+.product-info button:hover {
+  background: linear-gradient(135deg, #0056b3, #003a80);
 }

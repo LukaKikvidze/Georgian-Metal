@@ -20,7 +20,7 @@ export class ProductsComponent {
     {
       id: 1,
       title: 'პროდუქტი 1',
-      image: 'assets/images/product1.jpg',
+      image: 'assets/images/armatura.webp',
       description: 'მცირე აღწერა პროდუქტის შესახებ 1...',
       fullDescription: 'სრული აღწერა პროდუქტის შესახებ 1...',
     },
