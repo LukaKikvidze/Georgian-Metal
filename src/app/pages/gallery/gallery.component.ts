@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Lightbox } from 'ngx-lightbox';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-gallery',
@@ -9,25 +8,46 @@ import { Lightbox } from 'ngx-lightbox';
 })
 export class GalleryComponent {
   images: string[] = [];
-  album: any[] = [];
+  currentImageIndex: number = 0;
+  showLightbox: boolean = false;
 
-  constructor(private lightbox: Lightbox) {
+  constructor() {
+    // 33 ფოტოს დინამიურად ჩატვირთვა
     for (let i = 1; i <= 33; i++) {
-      const src = `assets/gallery-images/${i}.jpeg`;
-      this.images.push(src);
-      this.album.push({
-        src: src,
-        caption: `ფოტო ${i}`,
-        thumb: src
-      });
+      this.images.push(`assets/gallery-images/${i}.jpeg`);
     }
   }
 
-  open(index: number): void {
-    this.lightbox.open(this.album, index);
+  // ლაითბოქსის გახსნა
+  openLightbox(index: number): void {
+    this.currentImageIndex = index;
+    this.showLightbox = true;
+    document.body.style.overflow = 'hidden'; // სქროლირების გათიშვა
   }
 
-  close(): void {
-    this.lightbox.close();
+  // ლაითბოქსის დახურვა
+  closeLightbox(): void {
+    this.showLightbox = false;
+    document.body.style.overflow = 'auto'; // სქროლირების ჩართვა
+  }
+
+  // შემდეგი ფოტო
+  nextImage(): void {
+    this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+  }
+
+  // წინა ფოტო
+  prevImage(): void {
+    this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length;
+  }
+
+  // კლავიატურის მართვა (არასავალდებულო)
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if (this.showLightbox) {
+      if (event.key === 'ArrowRight') this.nextImage();
+      if (event.key === 'ArrowLeft') this.prevImage();
+      if (event.key === 'Escape') this.closeLightbox();
+    }
   }
 }

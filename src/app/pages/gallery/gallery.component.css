@@ -1,53 +1,193 @@
+/* გალერეის კონტეინერი */
 .gallery-container {
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, #f2f4f7, #ffffff);
-  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+/* სათაური */
 .gallery-title {
   text-align: center;
+  color: #333;
   font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  color: #222;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 
+/* ფოტოების ქსელი */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
+  gap: 20px;
+  padding: 10px;
 }
 
+/* თითოეული ფოტოს ელემენტი */
 .gallery-item {
-  width: 100%;
-  height: 0;
-  padding-bottom: 75%; /* 4:3 ratio */
-  position: relative;
+  border-radius: 8px;
   overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  aspect-ratio: 4/3;
 }
 
 .gallery-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.gallery-item img {
-  position: absolute;
+/* ფოტოს სტილი */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+/* ლაითბოქსის სტილი */
+.lightbox-overlay {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
 }
 
-.gallery-item:hover img {
+/* ლაითბოქსის შიგნით კონტეინერი */
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  background-color: #222;
+}
+
+/* დიდი ფოტოს სტილი */
+.lightbox-image {
+  max-height: 80vh;
+  max-width: 90vw;
+  border-radius: 15px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.lightbox-image:hover {
+  transform: scale(1.05);
+}
+
+/* დახურვის ღილაკი */
+.close-btn {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  color: #bbb;
+}
+
+/* ნავიგაციის ღილაკები (ისრები) */
+.lightbox-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.4);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ისრების ფორმა (მარცხენა და მარჯვენა) */
+.nav-btn:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+}
+
+.nav-btn.left:before {
+  transform: rotate(45deg);
+}
+
+.nav-btn.right:before {
+  transform: rotate(-45deg);
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
   transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ფოტოების რაოდენობის ინდიკატორი */
+.image-counter {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* რესპონსივობა */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .nav-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .close-btn {
+    font-size: 35px;
+    top: -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+  }
 }
