@@ -9,6 +9,7 @@ import { CareerComponent } from './pages/career/career.component';
 import { QualityComponent } from './pages/quality/quality.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductDetailComponent } from './pages/products/product-detail/product-detail.component';
+import {PartnerComponent} from './pages/partners/partners.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,9 @@ const routes: Routes = [
   { path: 'career', component: CareerComponent },
   { path: 'quality', component: QualityComponent },
   { path: 'products', component: ProductsComponent },
+  { path:  'partners', component: PartnerComponent },
+
+
   //TESTING
   { path: 'products', component: ProductsComponent },
   { path: 'products/:id', component: ProductDetailComponent },

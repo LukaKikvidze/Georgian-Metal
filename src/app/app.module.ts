@@ -14,11 +14,14 @@ import {CareerModule} from './pages/career/career.module';
 import {GalleryModule} from './pages/gallery/gallery.module';
 import {ProductDetailModule} from './pages/products/product-detail/product-detail.module';
 import {ProductsModule} from './pages/products/products.module';
+import {PartnerModule} from './pages/partners/partners.module';
+import {HomeModule} from './pages/home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
+
   imports: [
     LightboxModule,
     ContactModule,
@@ -31,7 +34,9 @@ import {ProductsModule} from './pages/products/products.module';
     CareerModule,
     GalleryModule,
     ProductDetailModule,
-    ProductsModule
+    ProductsModule,
+    PartnerModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
