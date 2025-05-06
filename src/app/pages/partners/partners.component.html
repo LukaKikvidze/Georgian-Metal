@@ -4,7 +4,7 @@
     <div class="partner-card" *ngFor="let partner of partners">
       <img [src]="partner.logo" [alt]="partner.name" class="partner-logo">
       <h3>{{ partner.name }}</h3>
-      <p>საიტზე გადასვლა...</p>
+      <a href="{{ partner.website }}" target="_blank" class="visit-button">საიტზე გადასვლა</a>
     </div>
   </div>
 </div>

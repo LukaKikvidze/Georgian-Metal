@@ -10,6 +10,7 @@ import { QualityComponent } from './pages/quality/quality.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductDetailComponent } from './pages/products/product-detail/product-detail.component';
 import {PartnerComponent} from './pages/partners/partners.component';
+import {AddProductComponent} from './components/add-product/add-product.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,7 +30,12 @@ const routes: Routes = [
   //TESTING2
   { path: 'product-detail/:id', component: ProductDetailComponent },
   { path: 'products', component: ProductsComponent },
-  { path: '', redirectTo: '/products', pathMatch: 'full' }
+  { path: '', redirectTo: '/products', pathMatch: 'full' },
+
+  //ULTRA TESTING
+  { path: 'add-product', component: AddProductComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: '', redirectTo: '/products', pathMatch: 'full' },
 ];
 
 @NgModule({

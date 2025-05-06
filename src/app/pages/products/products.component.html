@@ -1,13 +1,6 @@
-<div class="products-container">
-  <h1 class="section-title">ჩვენი პროდუქტები</h1>
-  <div class="products-grid">
-    <div class="product-card" *ngFor="let product of products">
-      <img [src]="product.image" alt="{{ product.title }}">
-      <div class="product-info">
-        <h3>{{ product.title }}</h3>
-        <p>{{ product.description }}</p>
-        <button [routerLink]="['/product-detail', product.id]">იხილეთ სრულად</button>
-      </div>
-    </div>
-  </div>
+<div *ngFor="let product of products">
+  <h3>{{ product.name }}</h3>
+  <p>{{ product.description }}</p>
+  <p>₾{{ product.price }}</p>
+  <img [src]="product.image" width="150">
 </div>
