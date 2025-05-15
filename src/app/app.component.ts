@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
   standalone: false,
-  styleUrl: './app.component.css'
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'georgian-metal';
+export class AppComponent implements OnInit {
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit(): void {
+    const lang = localStorage.getItem('lang') || 'ka'; // საწყისი ენა
+    this.translate.use(lang); // ენას აირჩევს
+    this.translate.setDefaultLang(lang); // ავტომატურად დაფიქსირდება
+  }
 }

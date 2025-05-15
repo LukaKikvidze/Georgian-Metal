@@ -1,0 +1,19 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "PRODUCTS": "Products",
+    "PARTNERS": "Partners",
+    "GALLERY": "Gallery",
+    "QUALITY": "Quality",
+    "CONTACT": "Contact",
+    "CAREER": {
+      "TITLE": "Career",
+      "WHY": "Why Georgia Metal?",
+      "WHY_TEXT": "Georgia Metal stands out for its high-quality metal products, modern technologies, and qualified personnel.",
+      "OPPORTUNITIES": "Job Opportunities",
+      "OPPORTUNITIES_TEXT": "We offer career growth and professional development opportunities in the metallurgy field.",
+      "VACANCIES": "Vacancies",
+      "VACANCY_TEXT": "Position: Chief Accountant\nCompany: LLC Georgia Metal\nLocation: Zestaponi, Argveta village\n\nMain responsibilities:\n- Managing company accounting;\n- Preparing financial statements;\n- Submitting tax declarations, and more.\n\nQualifications:\n- Higher education;\n- 3 years of experience;\n- Knowledge of accounting software (1C, Info Accountant);\n- Knowledge of Russian language.\n\nWork conditions:\n- Full-time: Monday-Friday, 09:00-18:00;\n- Probation period: 3 months;\n- Salary: 3000 GEL (net)."
+    }
+  }
+}
