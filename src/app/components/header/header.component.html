@@ -1,10 +1,11 @@
 <header class="site-header" [class.scrolled]="isScrolled">
   <div class="container">
-    <a class="logo" routerLink="/" (click)="closeMenu()">Georgia Metal</a>
+    <a class="logo" routerLink="/" (click)="closeMenu()">
+      <span class="logo-georgia">Georgia</span><br>
+      <span class="logo-metal">Metal</span>
+    </a>
 
-    <button class="menu-toggle" (click)="toggleMenu()" aria-label="მენიუს გახსნა">
-      ☰
-    </button>
+    <button class="menu-toggle" (click)="toggleMenu()" aria-label="მენიუს გახსნა">☰</button>
 
     <nav class="main-nav" [class.active]="isMenuOpen">
       <ul>
@@ -15,9 +16,10 @@
         <li><a routerLink="/career" (click)="closeMenu()">{{ 'NAV.CAREER' | translate }}</a></li>
         <li><a routerLink="/quality" (click)="closeMenu()">{{ 'NAV.QUALITY' | translate }}</a></li>
         <li><a routerLink="/contact" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a></li>
-        <li>
-          <button (click)="switchLanguage('ka')">KA</button>
-          <button (click)="switchLanguage('en')">EN</button>
+        <li class="lang-switch">
+          <button [class.active]="currentLang === 'ka'" (click)="switchLanguage('ka')">KA</button>
+          /
+          <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
         </li>
       </ul>
     </nav>
