@@ -1,43 +1,99 @@
-/* Home Component Specific Styles */
-.main-content {
-  width: 100%;
-  margin-top: 120px; /* Add space for header */
-}
-
-/* About Section */
-.about-section {
-  padding: 50px;
-  text-align: center;
-}
-
-.about-section h2 {
-  color: #5E0101;
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.about-section h3 {
-  color: #27425D;
-  font-size: 32px;
-  font-weight: 600;
-}
-
-/* Image Gallery */
-.image-gallery {
+/* Container fills full viewport */
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
   display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-top: 30px;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content to bottom */
+  padding: 0 5vw 5vh; /* padding from sides and bottom */
+  box-sizing: border-box;
 }
 
-.image-item {
-  width: 270px;
-  height: 250px;
-  background-color: #D9D9D9;
-  border-radius: 10px;
+/* Background shapes scaled relative to viewport */
+.gray-bg {
+  position: absolute;
+  width: 64.5vw; /* ~928 / 1440 */
+  height: 79.8vh; /* ~786 / 982 */
+  left: 35.5vw;   /* ~512 / 1440 */
+  top: -0.3vh;    /* ~-3 / 982 */
+  background: #A7A7A7;
 }
-.gradient-background {
-  width: 100%;
-  height: 736px;
-  background: linear-gradient(180deg, white 0%, #27425D 100%);
+
+.blue-overlay {
+  position: absolute;
+  width: 51vw;   /* ~734 / 1440 */
+  height: 73.5vh; /* ~722 / 982 */
+  left: -4.3vw;  /* ~-63 / 1440 */
+  top: -0.3vh;
+  background: rgba(39, 66, 93, 0.81);
 }
+
+/* Images scaled and positioned proportionally */
+.image-1 {
+  position: absolute;
+  width: 36.75vw;   /* 528.75 / 1440 */
+  height: 71.8vh;   /* 705 / 982 */
+  left: 5.6vw;      /* 81 / 1440 */
+  top: 21.7vh;      /* 212 / 982 */
+  box-shadow: -1vw 0.8vw 1.9vw 0.07vw rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+.image-2 {
+  position: absolute;
+  width: 40.9vw;
+  height: 60vh;
+  left: 61.9vw;
+  top: 19.4vh;
+  transform: rotate(45deg); /* Final rotation */
+  transform-origin: top left;
+  object-fit: cover;
+}
+
+.image-2.slide-in {
+  transform: translateY(80px) rotate(75deg);  /* Start rotated more */
+}
+
+.image-2.slide-in.visible {
+  transform: translateY(0) rotate(45deg);     /* Final rotation */
+}
+
+.image-3 {
+  position: absolute;
+  width: 35.8vw;
+  height: 52.5vh;
+  left: 60.1vw;
+  top: 18.2vh;
+  transform: rotate(-25deg);  /* Final rotation */
+  transform-origin: top left;
+  object-fit: cover;
+}
+
+.image-3.slide-in {
+  transform: translateY(80px) rotate(-55deg);  /* Start rotated more */
+}
+
+.image-3.slide-in.visible {
+  transform: translateY(0) rotate(-25deg);     /* Final rotation */
+}
+
+
+/* Shared animation class */
+/* Animation starting point */
+.slide-in {
+  opacity: 0;
+  transform: translateY(80px) rotate(10deg);  /* Default initial position */
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* Final state: original location and correct rotation */
+.slide-in.visible {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg);  /* Smoothly rotate into place */
+}
+

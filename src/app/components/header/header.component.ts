@@ -10,10 +10,10 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   isScrolled = false;
   isMenuOpen = false;
-  currentLang: string; // <--- ვამატებთ
+  currentLang: string;
 
   constructor(private translate: TranslateService) {
-    this.currentLang = this.translate.currentLang || 'ka'; // ან 'en' თუ ასე გინდა
+    this.currentLang = this.translate.currentLang || 'ka';
   }
 
   @HostListener('window:scroll', [])
@@ -31,6 +31,6 @@ export class HeaderComponent {
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
-    this.currentLang = lang; // <--- ენას ვანახლებთ ღილაკისთვის
+    this.currentLang = lang;
   }
 }
