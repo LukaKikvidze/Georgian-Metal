@@ -1,74 +1,87 @@
-.main-footer {
-  background: #121212;
-  color: #f1f1f1;
-  padding-top: 50px;
-  font-family: 'Segoe UI', sans-serif;
+/* Base footer style (20vh) */
+.footer {
+  min-height: 20vh;
+  /* other footer styles */
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 0 10%;
+/* Specific page with taller footer */
+.page-with-tall-footer .footer {
+  min-height: 10vh; /* or whatever height you need */
 }
 
-.footer-section {
-  flex: 1 1 300px;
-}
 
-.footer-logo {
-  font-size: 28px;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.footer-contact {
-  line-height: 1.6;
-  font-size: 15px;
-  margin-bottom: 20px;
-}
-
-.footer-socials a {
-  margin-right: 15px;
-  color: #ccc;
-  font-size: 22px;
-  transition: color 0.3s;
-}
-
-.footer-socials a:hover {
-  color: #fff;
-}
-
-.links-section h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.links-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.links-section ul li {
-  margin-bottom: 10px;
-}
-
-.links-section ul li a {
-  color: #aaa;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.links-section ul li a:hover {
-  color: #fff;
-}
-
-.footer-bottom {
+/* Footer styles */
+.footer {
+  background: #27425D;
+  padding: 25px 0;
+  box-shadow: 0 -3px 6px rgba(255, 254, 254, 0.1);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
   text-align: center;
-  padding: 20px 0;
-  background-color: #0e0e0e;
-  border-top: 1px solid #333;
-  font-size: 14px;
-  color: #888;
+  user-select: none;
+  width: 100%;
+  flex-shrink: 0; /* Prevents footer from shrinking */
+}
+
+.footer-content {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px; /* Adds padding on smaller screens */
+  box-sizing: border-box;
+}
+
+.contact-info {
+  word-wrap: break-word;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: inline-flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #27425D;
+  font-size: 22px;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #5E0101;
+  color: white;
+}
+
+.copyright {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  width: 100%;
 }

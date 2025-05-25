@@ -20,8 +20,8 @@ const routes: Routes = [
   { path: 'career', component: CareerComponent },
   { path: 'quality', component: QualityComponent },
   { path: 'products', component: ProductsComponent },
-  { path:  'partners', component: PartnerComponent },
-
+  { path: '', component: HomeComponent },
+  { path: 'partners', component: HomeComponent },
 
   //TESTING
   { path: 'products', component: ProductsComponent },

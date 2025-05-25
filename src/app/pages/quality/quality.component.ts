@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './quality.component.css'
 })
 export class QualityComponent {
+  openedDropdown: string | null = null;
+
+  toggleDropdown(id: string): void {
+    this.openedDropdown = this.openedDropdown === id ? null : id;
+  }
+
+  isOpen(id: string): boolean {
+    return this.openedDropdown === id;
+  }
 
 }

@@ -1,1 +1,38 @@
-<p>quality works!</p>
+<div class="quality-container">
+  <div class="quality-box">
+    <h1 class="quality-title">სერთიფიკატები</h1>
+
+    <!-- Dropdown 1 -->
+    <div class="dropdown-item">
+      <div class="dropdown-title" (click)="toggleDropdown('cert1')">
+        ISO 9001:2015
+        <span class="arrow" [class.rotated]="isOpen('cert1')">▼</span>
+      </div>
+      <div class="dropdown-content" *ngIf="isOpen('cert1')">
+        ხარისხის მართვის საერთაშორისო სტანდარტი.
+      </div>
+    </div>
+
+    <!-- Dropdown 2 -->
+    <div class="dropdown-item">
+      <div class="dropdown-title" (click)="toggleDropdown('cert2')">
+        ISO 14001:2015
+        <span class="arrow" [class.rotated]="isOpen('cert2')">▼</span>
+      </div>
+      <div class="dropdown-content" *ngIf="isOpen('cert2')">
+        გარემოს დაცვის მართვის სტანდარტი.
+      </div>
+    </div>
+
+    <!-- Dropdown 3 -->
+    <div class="dropdown-item">
+      <div class="dropdown-title" (click)="toggleDropdown('cert3')">
+        ISO 45001:2018
+        <span class="arrow" [class.rotated]="isOpen('cert3')">▼</span>
+      </div>
+      <div class="dropdown-content" *ngIf="isOpen('cert3')">
+        შრომის უსაფრთხოების და ჯანმრთელობის სტანდარტი.
+      </div>
+    </div>
+  </div>
+</div>

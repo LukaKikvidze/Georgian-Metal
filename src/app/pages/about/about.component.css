@@ -1,51 +1,139 @@
-.about-container {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #27425D;
+:host {
+  display: block;
+  background: white;
+  color: #27425d;
   font-family: 'Inter', sans-serif;
-  padding: 20px;
 }
 
-.about-title {
-  font-family: 'Lora', serif;
-  font-weight: 600;
-  font-size: 40px;
-  color: #5E0101;
-  text-align: center;
-  margin-bottom: 10px;
+.section-title {
+  position: absolute;
+  top: 40px;
+  left: 153px;
+  z-index: 2;
+  color: #27425d;
 }
 
-.about-subtitle {
-  font-family: 'Lora', serif;
-  font-weight: 600;
+.section-title h2 {
+  margin: 0;
   font-size: 32px;
-  color: #27425D;
-  text-align: center;
-  margin-bottom: 20px;
+  font-weight: 700;
 }
 
-.about-text {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  margin-bottom: 40px;
-  padding: 0 10px;
+.section-title h3 {
+  margin: 5px 0 0;
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.about-content p {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  padding: 0 10px;
-}
-
-.about-image {
+.container {
+  position: relative;
   width: 100%;
-  max-width: 677px;
+  max-width: 1440px;
+  height: 935px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.bg-grey {
+  position: absolute;
+  width: 1424px;
+  height: 1143px;
+  left: 343px;
+  top: -272px;
+  background: rgba(167, 167, 167, 0.5);
+  z-index: 0;
+
+  opacity: 0;
+  transform: translateX(-250px); /* თავიდან გადახრილი მარცხნივ */
+  transition: all 1s ease-out;
+}
+
+.bg-grey.slide-in-left {
+  opacity: 1;
+  transform: translateX(0); /* ნორმალურ პოზიციაზე */
+}
+
+
+.blue-box {
+  position: absolute;
+  width: 414px;
+  height: 684px;
+  left: 1028px;
+  top: 240px;
+  background: rgba(39, 66, 93, 0.81);
+  z-index: 1;
+}
+
+.headline {
+  position: absolute;
+  width: 1129px;
+  left: 153px;
+  top: 120px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  z-index: 2;
+}
+
+.main-text {
+  position: absolute;
+  width: 752px;
+  height: 624px;
+  left: 153px;
+  top: 218px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  z-index: 2;
+}
+
+.image-box {
+  position: absolute;
+  width: 477px;
+  height: 326px;
+  left: 975px;
+  top: 240px;
+  z-index: 3;
+}
+
+.image-box img {
+  width: 100%;
   height: auto;
   display: block;
-  margin: 30px auto 0 auto;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/*Testing*/
+.about-heading {
+  text-align: center;
+  color: #5E0101;
+  font-size: 40px;
+  font-family: Lora, serif;
+  font-weight: 600;
+  line-height: 50px;
+  word-wrap: break-word;
+}
+
+.about-subheading {
+  text-align: center;
+  color: #27425D;
+  font-size: 32px;
+  font-family: Lora, serif;
+  font-weight: 600;
+  line-height: 40px;
+  word-wrap: break-word;
+}
+
+
+
+/*animation*/
+
+.image-box {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease-out;
+}
+
+.image-box.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
 }

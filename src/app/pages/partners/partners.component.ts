@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, QueryList, ViewChildren, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-partner',
@@ -6,15 +6,32 @@ import { Component } from '@angular/core';
   templateUrl: './partners.component.html',
   styleUrls: ['./partners.component.css']
 })
-export class PartnerComponent {
-    partners = [
-      { name: 'GTM Group', logo: 'assets/partners/gtmgroup.png', website: 'https://gtmgroup.ge' },
-      { name: 'Poladis sakhli', logo: 'assets/partners/steelhouse.png', website: 'https://steelhouse.ge' },
-      { name: 'First Commodities DMCC', logo: 'assets/partners/DMCC.jpg', website: 'https://firstcommoditiesdmcc.com' },
-      { name: 'Stemcor Group', logo: 'assets/partners/stemcor.png', website: 'https://stemcor.com' },
-      { name: 'Steelco for Steel Trading', logo: 'assets/partners/stemcorft.png', website: 'http://www.steelcotrading.com/' },
-      { name: 'Bank of Georgia', logo: 'assets/partners/BOG.jpg', website: 'https://bankofgeorgia.ge' },
-      { name: 'Delta Steel', logo: 'assets/partners/deltasteel.jpg', website: 'https://deltasteel.ge' },
-      { name: 'Georgian Railway', logo: 'assets/partners/GR.png', website: 'https://railway.ge' }
-    ];
+export class PartnerComponent implements AfterViewInit {
+  partners = [
+    { name: 'GTM Group', img: 'assets/partners/GTM.jpg' },
+    { name: 'Poladis sakhli', img: 'assets/partners/steelhouse.png' },
+    { name: 'First Commodities DMCC', img: 'assets/partners/DMCC.jpg' },
+    { name: 'Stemcor Group', img: 'assets/partners/stemcor.png' },
+    { name: 'Steelco for Steel Trading', img: 'assets/partners/stemcorft.png' },
+    { name: 'Bank of Georgia', img: 'assets/partners/BOG.jpg' },
+    { name: 'Delta Steel', img: 'assets/partners/deltasteel.jpg' },
+    { name: 'Georgian Railway', img: 'assets/partners/GR.png' }
+  ];
+
+  @ViewChildren('partnerCard') partnerCards!: QueryList<ElementRef>;
+
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    this.partnerCards.forEach(card => {
+      observer.observe(card.nativeElement);
+    });
+  }
 }

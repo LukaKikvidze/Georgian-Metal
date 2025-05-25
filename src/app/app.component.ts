@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  title: any;
   constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
