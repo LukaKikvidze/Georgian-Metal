@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { QualityComponent } from './quality.component';
-import {FormsModule} from "@angular/forms";
-
-
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from '@angular/common'
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -11,7 +10,8 @@ import {FormsModule} from "@angular/forms";
   ],
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+      MatIconModule
     ]
 })
 export class QualityModule { }
