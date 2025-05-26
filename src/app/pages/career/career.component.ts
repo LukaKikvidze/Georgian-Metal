@@ -7,19 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./career.component.css']
 })
 export class CareerComponent {
-  private openDropdowns: Set<string> = new Set();  // Store open dropdowns
+  openedDropdown: string | null = null;
 
-  // Toggle dropdown state
-  toggleDropdown(dropdownId: string): void {
-    if (this.openDropdowns.has(dropdownId)) {
-      this.openDropdowns.delete(dropdownId);  // Close dropdown
-    } else {
-      this.openDropdowns.add(dropdownId);  // Open dropdown
-    }
+  toggleDropdown(id: string): void {
+    this.openedDropdown = this.openedDropdown === id ? null : id;
   }
 
-  // Check if a dropdown is open
-  isDropdownOpen(dropdownId: string): boolean {
-    return this.openDropdowns.has(dropdownId);
+  isDropdownOpen(id: string): boolean {
+    return this.openedDropdown === id;
   }
 }

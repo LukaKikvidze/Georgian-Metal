@@ -2,54 +2,33 @@
   <div class="career-box">
     <h1 class="career-title">კარიერა</h1>
 
-    <!-- Dropdown Section -->
     <div class="faq-item">
-      <div class="faq-title" (click)="toggleDropdown('dropdown1')">
+      <div class="faq-title" (click)="toggleDropdown('dropdown1')" [class.active]="isDropdownOpen('dropdown1')">
         რატომ Georgia Metal?
-        <span class="arrow" [class.open]="isDropdownOpen('dropdown1')">▼</span>
+        <span class="arrow" [class.active]="isDropdownOpen('dropdown1')">▼</span>
       </div>
-      <div class="faq-content" [ngClass]="{'active': isDropdownOpen('dropdown1')}">
+      <div class="faq-content" [class.active]="isDropdownOpen('dropdown1')">
         Georgia Metal გამოირჩევა მაღალი ხარისხის ლითონის პროდუქციით, თანამედროვე ტექნოლოგიებითა და კვალიფიციური კადრებით.
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-title" (click)="toggleDropdown('dropdown2')">
+      <div class="faq-title" (click)="toggleDropdown('dropdown2')" [class.active]="isDropdownOpen('dropdown2')">
         სამუშაო შესაძლებლობები
-        <span class="arrow" [class.open]="isDropdownOpen('dropdown2')">▼</span>
+        <span class="arrow" [class.active]="isDropdownOpen('dropdown2')">▼</span>
       </div>
-      <div class="faq-content" [ngClass]="{'active': isDropdownOpen('dropdown2')}">
+      <div class="faq-content" [class.active]="isDropdownOpen('dropdown2')">
         ჩვენ ვთავაზობთ კარიერულ ზრდასა და პროფესიული განვითარების შესაძლებლობებს მეტალურგიის სფეროში.
       </div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-title" (click)="toggleDropdown('dropdown3')">
+      <div class="faq-title" (click)="toggleDropdown('dropdown3')" [class.active]="isDropdownOpen('dropdown3')">
         ვაკანსიები
-        <span class="arrow" [class.open]="isDropdownOpen('dropdown3')">▼</span>
+        <span class="arrow" [class.active]="isDropdownOpen('dropdown3')">▼</span>
       </div>
-      <div class="faq-content" [ngClass]="{'active': isDropdownOpen('dropdown3')}">
-        <pre class="whitespace-pre-wrap">
-<strong>დასახელება:</strong> მთავარი ბუღალტერი
-<strong>მომწოდებელი:</strong> შპს „ჯორჯია მეტალ“
-<strong>მისამართი:</strong> ზესტაფონი, სოფელი არგვეთა
-
-<strong>ძირითადი ფუნქცია-მოვალეობები:</strong>
-- კომპანიის ბუღალტრული აღრიცხვის მართვა;
-- ფინანსური ანგარიშგებების მომზადება;
-- საგადასახადო დეკლარაციების წარდგენა და სხვა.
-
-<strong>საკვალიფიკაციო მოთხოვნები:</strong>
-- უმაღლესი განათლება;
-- 3 წლიანი გამოცდილება;
-- ბუღალტრული პროგრამების ცოდნა (1C, ინფო ბუღალტერი);
-- რუსული ენის ცოდნა.
-
-<strong>სამუშაო პირობები:</strong>
-- სრული განაკვეთი: ორშაბათი-პარასკევი, 09:00-18:00;
-- გამოსაცდელი ვადა: 3 თვე;
-- ანაზღაურება: 3000 ლარი (ხელზე).
-        </pre>
+      <div class="faq-content" [class.active]="isDropdownOpen('dropdown3')">
+        ამჟამად ვაკანსიები არ არის ხელმისაწვდომი. გთხოვთ, შემოგვიერთდით მოგვიანებით ან გამოგვიგზავნეთ თქვენი რეზიუმე.
       </div>
     </div>
   </div>
