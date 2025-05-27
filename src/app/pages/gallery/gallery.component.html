@@ -2,18 +2,25 @@
   <div class="gallery-header">
     <h2 class="section-title">მედია გალერეა</h2>
     <div class="gallery-tabs">
-      <button class="gallery-tab active">ფოტო გალერეა</button>
-      <button class="gallery-tab">ვიდეო გალერეა</button>
+      <button
+        class="gallery-tab"
+        [class.active]="activeTab === 'photo'"
+        (click)="selectTab('photo')"
+      >
+        ფოტო გალერეა
+      </button>
+      <button
+        class="gallery-tab"
+        [class.active]="activeTab === 'video'"
+        (click)="selectTab('video')"
+      >
+        ვიდეო გალერეა
+      </button>
     </div>
   </div>
 
-  <div class="gallery-grid">
-    <div class="gallery-item"><img src="/assets/img1.jpg" alt="Gallery 1" /></div>
-    <div class="gallery-item"><img src="/assets/img2.jpg" alt="Gallery 2" /></div>
-    <div class="gallery-item"><img src="/assets/img3.jpg" alt="Gallery 3" /></div>
-    <div class="gallery-item"><img src="/assets/img4.jpg" alt="Gallery 4" /></div>
-    <div class="gallery-item"><img src="/assets/img5.jpg" alt="Gallery 5" /></div>
-    <div class="gallery-item"><img src="/assets/img6.jpg" alt="Gallery 6" /></div>
+  <div class="gallery-content">
+    <app-photo *ngIf="activeTab === 'photo'"></app-photo>
+    <app-video *ngIf="activeTab === 'video'"></app-video>
   </div>
 </section>
-

@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { PhotoComponent } from './pages/photo/photo.component';
+import { VideoComponent } from './pages/video/video.component';
 
 // ენის თარგმანის ლოდერის factory ფუნქცია
 export function HttpLoaderFactory(http: HttpClient) {
@@ -27,39 +29,40 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AddProductComponent,
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    FormsModule,
-    LightboxModule,
-    RouterModule,
-    AppRoutingModule,
-    HeaderModule,
-    FooterModule,
-    ContactModule,
-    CareerModule,
-    GalleryModule,
-    ProductDetailModule,
-    ProductsModule,
-    PartnerModule,
-    HomeModule,
-    RouterOutlet,
+    declarations: [
+        AppComponent,
+        AddProductComponent,
+    ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        FormsModule,
+        LightboxModule,
+        RouterModule,
+        AppRoutingModule,
+        HeaderModule,
+        FooterModule,
+        ContactModule,
+        CareerModule,
+        GalleryModule,
+        ProductDetailModule,
+        ProductsModule,
+        PartnerModule,
+        HomeModule,
+        RouterOutlet,
 
-    // ენის თარგმანის მოდული
-    TranslateModule.forRoot({
-      defaultLanguage: 'ka',
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+        // ენის თარგმანის მოდული
+        TranslateModule.forRoot({
+            defaultLanguage: 'ka',
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
+    ],
+    providers: [],
+  exports: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {}

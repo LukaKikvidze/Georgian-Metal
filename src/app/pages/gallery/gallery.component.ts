@@ -7,6 +7,11 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent {
+  activeTab: 'photo' | 'video' = 'photo';
+
+  selectTab(tab: 'photo' | 'video') {
+    this.activeTab = tab;
+  }
   images: string[] = [];
   currentImageIndex: number = 0;
   showLightbox: boolean = false;
