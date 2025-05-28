@@ -1,43 +1,60 @@
-<!DOCTYPE html>
-<html lang="ka">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>კონტაქტი</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<main class="contact-container">
-  <section class="contact-box">
-    <h1>საკონტაქტო ინფორმაცია</h1>
+<div class="background-wrapper">
+  <div class="particles"></div>
 
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23680.13778489515!2d43.01981075073653!3d42.10710194676038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa514f1f41920ca07%3A0xb114469dfea9a1ee!2sgeorgiametal!5e0!3m2!1ska!2sge!4v1738720191878!5m2!1ska!2sge"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+  <div class="contact-container">
+    <div class="contact-box">
+      <div class="contact-header">
+        <div class="decorative-line left"></div>
+        <h1>
+          <span class="title-text">დაგვიკავშირდი</span>
+          <span class="title-shadow">დაგვიკავშირდი</span>
+        </h1>
+        <div class="decorative-line right"></div>
+      </div>
+
+      <div class="map-container">
+        <div class="map-overlay"></div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23680.13778489515!2d43.01981075073653!3d42.10710194676038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa514f1f41920ca07%3A0xb114469dfea9a1ee!2sgeorgiametal!5e0!3m2!1ska!2sge!4v1738720191878!5m2!1ska!2sge"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-group">
+          <div class="icon-wrapper">📍</div>
+          <div class="info-content">
+            <h2>მისამართი</h2>
+            <p>თბილისი, საქართველო</p>
+          </div>
+        </div>
+
+        <div class="info-group">
+          <div class="icon-wrapper">☎️</div>
+          <div class="info-content">
+            <h2>ტელეფონი</h2>
+            <p>+995 599 123 456</p>
+            <a href="tel:+995599123456" class="contact-link">დარეკე ახლა</a>
+          </div>
+        </div>
+
+        <div class="info-group">
+          <div class="icon-wrapper">✉️</div>
+          <div class="info-content">
+            <h2>ელ. ფოსტა</h2>
+            <p>info georgiametal.com</p>
+            <a href="mailto:info@example.com" class="contact-link">მოგვწერე წერილი</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="#" class="social-icon">📘</a>
+        <a href="#" class="social-icon">🐦</a>
+        <a href="#" class="social-icon">📸</a>
+      </div>
     </div>
-
-    <div class="contact-info">
-      <div class="info-group">
-        <h2>მისამართი:</h2>
-        <p>არგვეთა, ზესტაფონი. 2000</p>
-        <p>Argveta, Zestafoni. 2000</p>
-      </div>
-
-      <div class="info-group">
-        <h2>ტელეფონი:</h2>
-        <p>+995 599 18 47 77</p>
-      </div>
-
-      <div class="info-group">
-        <h2>ელ.ფოსტა:</h2>
-        <p>info georgiametal.ge</p>
-      </div>
-    </div>
-  </section>
-</main>
-</body>
-</html>
+  </div>
+</div>
