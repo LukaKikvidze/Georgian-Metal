@@ -1,14 +1,29 @@
-<div class="product-detail-container">
-  <div *ngIf="product" class="product-card">
-    <img [src]="product.image" alt="{{ product.title }}" class="product-image"/>
-    <div class="product-info">
-      <h1 class="product-title">{{ product.title }}</h1>
-      <p class="product-description">{{ product.description }}</p>
-      <button routerLink="/products" class="back-button">← უკან დაბრუნება</button>
-    </div>
-  </div>
+<div class="products-container">
+  <div class="blue-banner"></div>
 
-  <div *ngIf="!product" class="loading">
-    <p>პროდუქტის დეტალების ჩატვირთვა...</p>
+  <div class="main-content">
+    <img class="product-image" src="assets/gallery-images/armatura.png" alt="Product Image" />
+
+    <div class="product-info">
+      <h1 class="product-title">არმატურა, მარკა B500B, DIN 448.1 მიხედვით</h1>
+
+      <div class="product-section">
+        <h2>პროდუქტის აღწერა:</h2>
+        <p>არმატურა, ეს არის გრძელი ფოლადის წწნელი, რომელიც, როგორც წესი, დამზადებულია ნახშირბადოვანი ფოლადისგან</p>
+      </div>
+
+      <div class="product-section">
+        <h2>პროდუქტის გამოყენება:</h2>
+        <p>
+          სინი ძირითადად გამოიყენება რკინა-ბეტონის კონსტრუქციებში, როგორიცაა ხიდები, ჰესები, გზები, შენობები და ა.შ.
+          მათი ძირითადი მიზანია უზრუნველყონ ამ სტრუქტურის დამატებითი გამძლეობა და სიმტკიცე.
+        </p>
+      </div>
+
+      <div class="product-section">
+        <h2>პროდუქტის ზომა:</h2>
+        <p>დიამეტრი 12მმ-დან 32 მმ-მდე, სიგრძე 12მ.</p>
+      </div>
+    </div>
   </div>
 </div>

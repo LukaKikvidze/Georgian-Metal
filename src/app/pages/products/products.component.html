@@ -1,6 +1,19 @@
-<div *ngFor="let product of products">
-  <h3>{{ product.name }}</h3>
-  <p>{{ product.description }}</p>
-  <p>₾{{ product.price }}</p>
-  <img [src]="product.image" width="150">
+<div class="product-card">
+  <!-- პროდუქტის ფოტო -->
+  <div class="product-image-wrapper">
+    <img [src]="product.imageUrl || 'default-image.jpg'" alt="{{ product.name }}" class="product-image" (error)="handleImageError($event)">
+    <div class="image-overlay"></div>
+  </div>
+
+  <!-- პროდუქტის ინფორმაცია -->
+  <div class="product-info">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <button (click)="goToDetail()">
+      დეტალური ძებნა
+      <svg class="arrow-icon" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
 </div>

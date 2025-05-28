@@ -26,7 +26,7 @@ export class ProductDetailComponent implements OnInit {
     // For now, we'll simulate it with static data.
 
     const productData = [
-      { id: 1, title: 'Product 1', description: 'This is a detailed description of Product 1.', image: 'assets/product1.jpg' },
+      { id: 1, title: 'Product 1', description: 'This is a detailed description of Product 1.', image: 'assets/gallery-images/armatura.png' },
       { id: 2, title: 'Product 2', description: 'This is a detailed description of Product 2.', image: 'assets/product2.jpg' },
       { id: 3, title: 'Product 3', description: 'This is a detailed description of Product 3.', image: 'assets/product3.jpg' },
     ];
