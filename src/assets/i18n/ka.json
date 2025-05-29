@@ -28,6 +28,14 @@
 
     "PARTNERS_SECTION": {
       "READ_MORE": "სრულად..."
+    },
+
+    "GALLERY": {
+      "TITLE": "მედია გალერეა",
+      "TABS": {
+        "PHOTO": "ფოტო გალერეა",
+        "VIDEO": "ვიდეო გალერეა"
+      }
     }
   }
 }

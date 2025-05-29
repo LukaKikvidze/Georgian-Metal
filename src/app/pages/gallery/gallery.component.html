@@ -1,20 +1,20 @@
 <section class="gallery-section">
   <div class="gallery-header">
-    <h2 class="section-title">მედია გალერეა</h2>
+    <h2 class="section-title">{{ 'NAV.GALLERY.TITLE' | translate }}</h2>
     <div class="gallery-tabs">
       <button
         class="gallery-tab"
         [class.active]="activeTab === 'photo'"
         (click)="selectTab('photo')"
       >
-        ფოტო გალერეა
+        {{ 'NAV.GALLERY.TABS.PHOTO' | translate }}
       </button>
       <button
         class="gallery-tab"
         [class.active]="activeTab === 'video'"
         (click)="selectTab('video')"
       >
-        ვიდეო გალერეა
+        {{ 'NAV.GALLERY.TABS.VIDEO' | translate }}
       </button>
     </div>
   </div>

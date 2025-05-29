@@ -4,27 +4,38 @@
     "PRODUCTS": "Products",
     "PARTNERS": "Partners",
     "GALLERY": "Gallery",
+    "CAREER": "Career",
     "QUALITY": "Quality",
     "CONTACT": "Contact",
-    "PARTNERS_SECTION": {
-      "READ_MORE": "Read more..."
-    },
+
     "ABOUT": {
       "HEADING": "About Us",
       "SUBHEADING": "LLC \"Georgia Metal\"",
-      "HEADLINE": "LLC Georgia Metal was founded in 2018 with the goal of building a modern high-tech factory that would fully supply the market with the amount of rebar needed to completely replace imports.",
-      "TEXT": "The company also has the ambition to be actively represented internationally. The rolling workshop is currently operating in hot testing mode. It is expected that by June 2025, the factory will enter full-scale production. Once the factory is fully operational, its annual capacity will be 400,000 tons of rebar. By decision of the founders, it is planned to expand the product assortment, and in the near future, the construction of an additional line for rolling will begin, alongside a steel melting workshop with an 80-ton/hour electric arc furnace. LLC \"Georgia Metal\" is located in Zestafoni and currently employs over 300 people, most of whom are local residents. To achieve the best results, we have invited several foreign specialists to our team who have more than 30 years of work experience in leading metallurgical factories of CIS countries. The number of employees is expected to double once the steel melting workshop and additional rolling line are launched.",
-      "IMAGE_ALT": "Factory Image"
+      "HEADLINE": "LLC Georgia Metal was founded in 2018 with the aim of building a modern high-tech factory that would fully supply the market with the amount of rebar sufficient to replace imports for the entire market.",
+      "TEXT": "The company also has ambitions to actively participate on the international stage. The foundry workshop is currently operating in a hot testing mode. It is expected that by June 2025 the factory will enter full-scale production. After full-scale operation, its annual capacity will be 400 thousand tons of rebar. The founders have decided to expand the product range, and in the near future, construction will begin on an additional line for the production of clay, alongside a steel melting workshop with an 80-ton/hour electric arc furnace. LLC “Georgia Metal” is located in Zestafoni and currently employs over 300 people, most of whom are local residents. To achieve the best results, our team invited several foreign specialists with more than 30 years of experience in leading metallurgical factories in the CIS countries. The number of employees is expected to double by the time the steel melting workshop and additional clay production line are launched.",
+      "IMAGE_ALT": "Factory image"
     },
 
-    "CAREER": {
+    "CAREER_SECTION": {
       "TITLE": "Career",
       "WHY": "Why Georgia Metal?",
-      "WHY_TEXT": "Georgia Metal stands out for its high-quality metal products, modern technologies, and qualified personnel.",
+      "WHY_TEXT": "Georgia Metal stands out with high-quality metal products, modern technologies, and qualified staff.",
       "OPPORTUNITIES": "Job Opportunities",
       "OPPORTUNITIES_TEXT": "We offer career growth and professional development opportunities in the metallurgy field.",
       "VACANCIES": "Vacancies",
-      "VACANCY_TEXT": "Position: Chief Accountant\nCompany: LLC Georgia Metal\nLocation: Zestaponi, Argveta village\n\nMain responsibilities:\n- Managing company accounting;\n- Preparing financial statements;\n- Submitting tax declarations, and more.\n\nQualifications:\n- Higher education;\n- 3 years of experience;\n- Knowledge of accounting software (1C, Info Accountant);\n- Knowledge of Russian language.\n\nWork conditions:\n- Full-time: Monday-Friday, 09:00-18:00;\n- Probation period: 3 months;\n- Salary: 3000 GEL (net)."
+      "VACANCY_TEXT": "Position: Chief Accountant\nEmployer: LLC “Georgia Metal”\nLocation: Zestafoni, Argveta village\n\nMain duties and responsibilities:\n- Managing the company's accounting;\n- Preparing financial reports;\n- Submitting tax declarations, etc.\n\nQualifications:\n- Higher education;\n- 3 years experience;\n- Knowledge of accounting software (1C, Info Accountant);\n- Russian language proficiency.\n\nWorking conditions:\n- Full-time: Monday-Friday, 09:00-18:00;\n- Probation period: 3 months;\n- Salary: 3000 GEL (net)."
+    },
+
+    "PARTNERS_SECTION": {
+      "READ_MORE": "Read more..."
+    },
+
+    "GALLERY": {
+      "TITLE": "Media Gallery",
+      "TABS": {
+        "PHOTO": "Photo Gallery",
+        "VIDEO": "Video Gallery"
+      }
     }
   }
 }
