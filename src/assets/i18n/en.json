@@ -6,6 +6,14 @@
     "GALLERY": "Gallery",
     "QUALITY": "Quality",
     "CONTACT": "Contact",
+    "ABOUT": {
+      "HEADING": "About Us",
+      "SUBHEADING": "LLC \"Georgia Metal\"",
+      "HEADLINE": "LLC Georgia Metal was founded in 2018 with the goal of building a modern high-tech factory that would fully supply the market with the amount of rebar needed to completely replace imports.",
+      "TEXT": "The company also has the ambition to be actively represented internationally. The rolling workshop is currently operating in hot testing mode. It is expected that by June 2025, the factory will enter full-scale production. Once the factory is fully operational, its annual capacity will be 400,000 tons of rebar. By decision of the founders, it is planned to expand the product assortment, and in the near future, the construction of an additional line for rolling will begin, alongside a steel melting workshop with an 80-ton/hour electric arc furnace. LLC \"Georgia Metal\" is located in Zestafoni and currently employs over 300 people, most of whom are local residents. To achieve the best results, we have invited several foreign specialists to our team who have more than 30 years of work experience in leading metallurgical factories of CIS countries. The number of employees is expected to double once the steel melting workshop and additional rolling line are launched.",
+      "IMAGE_ALT": "Factory Image"
+    },
+
     "CAREER": {
       "TITLE": "Career",
       "WHY": "Why Georgia Metal?",

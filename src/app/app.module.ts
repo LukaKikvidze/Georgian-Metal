@@ -53,12 +53,12 @@ export function HttpLoaderFactory(http: HttpClient) {
 
         // ენის თარგმანის მოდული
         TranslateModule.forRoot({
-            defaultLanguage: 'ka',
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            }
+          defaultLanguage: 'ka', // ქართულ ენაზე
+          loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+          }
         }),
     ],
     providers: [],
