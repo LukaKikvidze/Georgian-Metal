@@ -51,7 +51,6 @@ export function HttpLoaderFactory(http: HttpClient) {
         HomeModule,
         RouterOutlet,
       QualityModule,
-
         // ენის თარგმანის მოდული
         TranslateModule.forRoot({
           defaultLanguage: 'ka', // ქართულ ენაზე

@@ -6,8 +6,8 @@
       <div class="contact-header">
         <div class="decorative-line left"></div>
         <h1>
-          <span class="title-text">დაგვიკავშირდი</span>
-          <span class="title-shadow">დაგვიკავშირდი</span>
+          <span class="title-text">{{ 'NAV.CONTACT_SECTION.TITLE' | translate }}</span>
+          <span class="title-shadow">{{ 'NAV.CONTACT_SECTION.TITLE' | translate }}</span>
         </h1>
         <div class="decorative-line right"></div>
       </div>
@@ -26,34 +26,46 @@
         <div class="info-group">
           <div class="icon-wrapper">📍</div>
           <div class="info-content">
-            <h2>მისამართი</h2>
-            <p>თბილისი, საქართველო</p>
+            <h2>{{ 'NAV.CONTACT_SECTION.CONTACT_INFO.ADDRESS.TITLE' | translate }}</h2>
+            <p>{{ 'NAV.CONTACT_SECTION.CONTACT_INFO.ADDRESS.TEXT' | translate }}</p>
           </div>
         </div>
 
         <div class="info-group">
           <div class="icon-wrapper">☎️</div>
           <div class="info-content">
-            <h2>ტელეფონი</h2>
-            <p>+995 599 123 456</p>
-            <a href="tel:+995599123456" class="contact-link">დარეკე ახლა</a>
+            <h2>{{ 'NAV.CONTACT_SECTION.CONTACT_INFO.PHONE.TITLE' | translate }}</h2>
+            <p>{{ 'NAV.CONTACT_SECTION.CONTACT_INFO.PHONE.TEXT' | translate }}</p>
+            <a
+              href="{{ 'NAV.CONTACT_SECTION.CONTACT_INFO.PHONE.LINK' | translate }}"
+              class="contact-link"
+              [attr.aria-label]="'NAV.CONTACT_SECTION.CONTACT_INFO.PHONE.LINK_TEXT' | translate"
+            >
+              {{ 'NAV.CONTACT_SECTION.CONTACT_INFO.PHONE.LINK_TEXT' | translate }}
+            </a>
           </div>
         </div>
 
         <div class="info-group">
           <div class="icon-wrapper">✉️</div>
           <div class="info-content">
-            <h2>ელ. ფოსტა</h2>
-            <p>info georgiametal.com</p>
-            <a href="mailto:info@example.com" class="contact-link">მოგვწერე წერილი</a>
+            <h2>{{ 'NAV.CONTACT_SECTION.CONTACT_INFO.EMAIL.TITLE' | translate }}</h2>
+            <p>{{ 'NAV.CONTACT_SECTION.CONTACT_INFO.EMAIL.TEXT' | translate }}</p>
+            <a
+              href="{{ 'NAV.CONTACT_SECTION.CONTACT_INFO.EMAIL.LINK' | translate }}"
+              class="contact-link"
+              [attr.aria-label]="'NAV.CONTACT_SECTION.CONTACT_INFO.EMAIL.LINK_TEXT' | translate"
+            >
+              {{ 'NAV.CONTACT_SECTION.CONTACT_INFO.EMAIL.LINK_TEXT' | translate }}
+            </a>
           </div>
         </div>
       </div>
 
       <div class="social-links">
-        <a href="#" class="social-icon">📘</a>
-        <a href="#" class="social-icon">🐦</a>
-        <a href="#" class="social-icon">📸</a>
+        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
       </div>
     </div>
   </div>
