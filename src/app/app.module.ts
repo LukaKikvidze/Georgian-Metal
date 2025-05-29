@@ -17,11 +17,11 @@ import { PartnerModule } from './pages/partners/partners.module';
 import { HomeModule } from './pages/home/home.module';
 import { AddProductComponent } from './components/add-product/add-product.component';
 import { FormsModule } from '@angular/forms';
+import { QualityModule } from './pages/quality/quality.module';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { PhotoComponent } from './pages/photo/photo.component';
-import { VideoComponent } from './pages/video/video.component';
+
 
 // ენის თარგმანის ლოდერის factory ფუნქცია
 export function HttpLoaderFactory(http: HttpClient) {
@@ -50,6 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         PartnerModule,
         HomeModule,
         RouterOutlet,
+      QualityModule,
 
         // ენის თარგმანის მოდული
         TranslateModule.forRoot({

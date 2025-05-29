@@ -8,6 +8,17 @@
     "QUALITY": "Quality",
     "CONTACT": "Contact",
 
+    "QUALITY_SECTION": {
+      "TITLE": "Quality",
+      "CERTIFICATES": {
+        "TITLE": "Certificates"
+      },
+      "CONTROL": {
+        "TITLE": "Quality Control",
+        "TEXT": "The quality management system of LLC Georgia Metal operates in accordance with ISO 9001 and DIN 4882. The company’s quality control system is certified by a well-known and reputable organization. Our main goal is to ensure the highest quality product to meet the most demanding customers both locally and internationally. To ensure high product quality, we strictly control the quality of imported steel materials. Our quality control department consists of experienced specialists who constantly monitor all stages of the production process. Product testing is carried out in our laboratory, which is equipped with the latest devices manufactured according to modern international standards."
+      }
+    },
+
     "ABOUT": {
       "HEADING": "About Us",
       "SUBHEADING": "LLC \"Georgia Metal\"",
