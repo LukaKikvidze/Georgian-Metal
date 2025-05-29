@@ -1,11 +1,11 @@
 <section class="partners-section">
-  <h2 class="section-title">პარტნიორები</h2>
+  <h2 class="section-title">{{ 'NAV.PARTNERS' | translate }}</h2>
 
   <div class="partners-grid">
     <div class="partner-card" #partnerCard *ngFor="let partner of partners">
       <img class="partner-logo" [src]="partner.img" [alt]="partner.name" />
       <h3 class="partner-name">{{ partner.name }}</h3>
-      <a class="partner-link" href="#">სრულად..</a>
+      <a class="partner-link" href="#">{{ 'NAV.PARTNERS_SECTION.READ_MORE' | translate }}</a>
     </div>
   </div>
 </section>
