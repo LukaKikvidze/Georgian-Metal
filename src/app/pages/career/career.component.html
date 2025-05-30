@@ -1,34 +1,34 @@
 <div class="career-container">
   <div class="career-box">
-    <h1 class="career-title">{{ 'NAV.CAREER_SECTION.TITLE' | translate }}</h1>
+    <h1 class="career-title">{{ 'CAREER_SECTION.TITLE' | translate }}</h1>
 
     <div class="faq-item">
       <div class="faq-title" (click)="toggleDropdown('dropdown1')" [class.active]="isDropdownOpen('dropdown1')">
-        {{ 'NAV.CAREER_SECTION.WHY' | translate }}
+        {{ 'CAREER_SECTION.WHY' | translate }}
         <span class="arrow" [class.active]="isDropdownOpen('dropdown1')">▼</span>
       </div>
       <div class="faq-content" [class.active]="isDropdownOpen('dropdown1')">
-        {{ 'NAV.CAREER_SECTION.WHY_TEXT' | translate }}
+        {{ 'CAREER_SECTION.WHY_TEXT' | translate }}
       </div>
     </div>
 
     <div class="faq-item">
       <div class="faq-title" (click)="toggleDropdown('dropdown2')" [class.active]="isDropdownOpen('dropdown2')">
-        {{ 'NAV.CAREER_SECTION.OPPORTUNITIES' | translate }}
+        {{ 'CAREER_SECTION.OPPORTUNITIES' | translate }}
         <span class="arrow" [class.active]="isDropdownOpen('dropdown2')">▼</span>
       </div>
       <div class="faq-content" [class.active]="isDropdownOpen('dropdown2')">
-        {{ 'NAV.CAREER_SECTION.OPPORTUNITIES_TEXT' | translate }}
+        {{ 'CAREER_SECTION.OPPORTUNITIES_TEXT' | translate }}
       </div>
     </div>
 
     <div class="faq-item">
       <div class="faq-title" (click)="toggleDropdown('dropdown3')" [class.active]="isDropdownOpen('dropdown3')">
-        {{ 'NAV.CAREER_SECTION.VACANCIES' | translate }}
+        {{ 'CAREER_SECTION.VACANCIES' | translate }}
         <span class="arrow" [class.active]="isDropdownOpen('dropdown3')">▼</span>
       </div>
       <div class="faq-content" [class.active]="isDropdownOpen('dropdown3')">
-        {{ 'NAV.CAREER_SECTION.VACANCY_TEXT' | translate }}
+        {{ 'CAREER_SECTION.VACANCY_TEXT' | translate }}
       </div>
     </div>
   </div>

@@ -7,61 +7,41 @@
     "CAREER": "Career",
     "QUALITY": "Quality",
     "CONTACT": "Contact",
+
+    "QUALITY_SECTION": {
+      "TITLE": "Quality",
+      "CERTIFICATES": {
+        "TITLE": "Certificates"
+      },
+      "CONTROL": {
+        "TITLE": "Quality Control",
+        "TEXT": "The quality management system of LLC Georgia Metal operates in accordance with ISO 9001 and DIN 4882. The company’s quality control system is certified by a well-known and reputable organization. Our main goal is to ensure the highest quality product to meet the most demanding customers both locally and internationally. To ensure high product quality, we strictly control the quality of imported steel materials. Our quality control department consists of experienced specialists who constantly monitor all stages of the production process. Product testing is carried out in our laboratory, which is equipped with the latest devices manufactured according to modern international standards."
+      }
+    },
+
     "CONTACT_SECTION": {
       "TITLE": "Contact Us",
-      "MAP": {
-        "SRC": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23680.13778489515!2d43.01981075073653!3d42.10710194676038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa514f1f41920ca07%3A0xb114469dfea9a1ee!2sgeorgiametal!5e0!3m2!1ska!2sge!4v1738720191878!5m2!1ska!2sge",
-        "ALLOW_FULLSCREEN": true,
-        "LOADING": "lazy",
-        "REFERRER_POLICY": "no-referrer-when-downgrade"
-      },
       "CONTACT_INFO": {
         "ADDRESS": {
-          "ICON": "📍",
           "TITLE": "Address",
-          "TEXT": "Tbilisi, Georgia"
+          "TEXT": "123 Main Street, Tbilisi, Georgia"
         },
         "PHONE": {
-          "ICON": "☎️",
           "TITLE": "Phone",
-          "TEXT": "+995 599 123 456",
-          "LINK": "tel:+995599123456",
-          "LINK_TEXT": "Call Now"
+          "TEXT": "+995 555 123 456",
+          "LINK": "tel:+995555123456",
+          "LINK_TEXT": "Call us"
         },
         "EMAIL": {
-          "ICON": "✉️",
           "TITLE": "Email",
-          "TEXT": "info@georgiametal.com",
-          "LINK": "mailto:info@georgiametal.com",
-          "LINK_TEXT": "Send Us an Email"
+          "TEXT": "info@example.com",
+          "LINK": "mailto:info@example.com",
+          "LINK_TEXT": "Write to us"
         }
-      },
-      "SOCIAL_LINKS": [
-        {
-          "ICON": "📘",
-          "URL": "#"
-        },
-        {
-          "ICON": "🐦",
-          "URL": "#"
-        },
-        {
-          "ICON": "📸",
-          "URL": "#"
-        }
-      ]
+      }
     }
   },
-  "QUALITY_SECTION": {
-    "TITLE": "Quality",
-    "CERTIFICATES": {
-      "TITLE": "Certificates"
-    },
-    "CONTROL": {
-      "TITLE": "Quality Control",
-      "TEXT": "The quality management system of LLC Georgia Metal operates in accordance with ISO 9001 and DIN 4882. The company’s quality control system is certified by a well-known and reputable organization. Our main goal is to ensure the highest quality product to meet the most demanding customers both locally and internationally. To ensure high product quality, we strictly control the quality of imported steel materials. Our quality control department consists of experienced specialists who constantly monitor all stages of the production process. Product testing is carried out in our laboratory, which is equipped with the latest devices manufactured according to modern international standards."
-    }
-  },
+
   "ABOUT": {
     "HEADING": "About Us",
     "SUBHEADING": "LLC \"Georgia Metal\"",
@@ -69,6 +49,7 @@
     "TEXT": "The company also has ambitions to actively participate on the international stage. The foundry workshop is currently operating in a hot testing mode. It is expected that by June 2025 the factory will enter full-scale production. After full-scale operation, its annual capacity will be 400 thousand tons of rebar. The founders have decided to expand the product range, and in the near future, construction will begin on an additional line for the production of clay, alongside a steel melting workshop with an 80-ton/hour electric arc furnace. LLC “Georgia Metal” is located in Zestafoni and currently employs over 300 people, most of whom are local residents. To achieve the best results, our team invited several foreign specialists with more than 30 years of experience in leading metallurgical factories in the CIS countries. The number of employees is expected to double by the time the steel melting workshop and additional clay production line are launched.",
     "IMAGE_ALT": "Factory image"
   },
+
   "CAREER_SECTION": {
     "TITLE": "Career",
     "WHY": "Why Georgia Metal?",
@@ -78,9 +59,11 @@
     "VACANCIES": "Vacancies",
     "VACANCY_TEXT": "Currently, there are no available vacancies. Please check back later or send us your resume."
   },
+
   "PARTNERS_SECTION": {
     "READ_MORE": "Read more..."
   },
+
   "GALLERY": {
     "TITLE": "Media Gallery",
     "TABS": {
