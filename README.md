@@ -1,24 +1,18 @@
-# GeorgianMetal
+# Angular ვებპროექტი
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+ეს არის Angular-ზე შექმნილი მრავალგვერდიანი ვებსაიტი, რომელიც მოიცავს ძირითად სტრუქტურულ კომპონენტებს, გვერდებსა და ვიდეო გალერეას.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 პროექტის გაშვება
 
-```bash
-ng serve
-```
+პროექტის ლოკალურად გასაშვებად:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. დააინსტალე საჭირო პაკეტები:
 
-## Code scaffolding
+npm install
+ng serve //სერვერის გაშვება
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
 
 For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
@@ -34,26 +28,62 @@ To build the project run:
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+პროექტი იყენებს Angular მოდულებზე დაფუძნებულ არქიტექტურას. ყველა კომპონენტი განათავსებულია შესაბამის მოდულში.
 
-## Running unit tests
+🔹 ძირითადი კომპონენტები:
+HeaderComponent – საიტის ზედა ნავიგაციის ზოლი
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+FooterComponent – საიტის ქვედა ნაწილი
 
-```bash
-ng test
-```
+📄 გვერდის კომპონენტები:
+HomeComponent – მთავარი გვერდი
 
-## Running end-to-end tests
+AboutComponent – ინფორმაცია ჩვენს შესახებ
 
-For end-to-end (e2e) testing, run:
+CareerComponent – კარიერა
 
-```bash
-ng e2e
-```
+ContactComponent – კონტაქტი
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+GalleryComponent – გალერეა (შეიცავს ვიდეოებს)
+
+PartnersComponent – პარტნიორები
+
+PhotoComponent – ფოტო გალერეა
+
+ProductsComponent – პროდუქტები
+
+QualityComponent – ხარისხის პოლიტიკა
+
+VideoComponent – ვიდეო გალერეა
+
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+VideoComponent შეიცავს MP4 ვიდეოების სია რომელსაც ჩატვირთავს გალერეის სახით.
+
+videos = [
+  { source: 'assets/gallery-video/C1627.MP4' },
+  { source: 'assets/videos/sample2.mp4' },
+  { source: 'assets/videos/sample3.mp4' }
+];
+
+⚠️ ვიდეო ფაილების შენიშვნა:
+ვიდეო ფაილები არ არის ატვირთული Git რეპოზიტორიაში დიდი ზომის გამო.
+
+ვიდეო ფაილების ჩასასმელად:
+გთხოვთ ხელით განათავსოთ ვიდეო ფაილები შემდეგ ლოკაციებზე:
+
+src/assets/gallery-video/C1627.MP4
+
+src/assets/videos/sample2.mp4
+
+src/assets/videos/sample3.mp4
+
+🌐 როუტინგი
+როუტინგი ხორციელდება app.routes.ts ფაილის მეშვეობით. თითოეული კომპონენტი განსაზღვრულია შესაბამის URL ბილიკზე.
+
+
+ℹ️ დამატებითი ინფორმაცია
+პროექტი აგებულია მხოლოდ მოდულებზე (standalone კომპონენტები არ გამოიყენება).
+
+ყველაფერი სტრუქტურირებულია ლოგიკურად კომპონენტებსა და მოდულებში.
