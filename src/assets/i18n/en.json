@@ -69,6 +69,16 @@
     "VACANCY_TEXT": "Currently, there are no available vacancies. Please check back later or send us your resume."
   },
 
+  "PRODUCT_DETAIL": {
+    "TITLE": "Rebar, Grade B500B, according to DIN 448.1",
+    "DESCRIPTION_TITLE": "Product Description:",
+    "DESCRIPTION": "Rebar is a long steel rod typically made of carbon steel.",
+    "USAGE_TITLE": "Product Usage:",
+    "USAGE": "It is mainly used in reinforced concrete structures such as bridges, dams, roads, buildings, etc. Its main purpose is to provide additional strength and durability to the structure.",
+    "SIZE_TITLE": "Product Size:",
+    "SIZE": "Diameter from 12mm to 32mm, length 12m."
+  },
+
   "PARTNERS_SECTION": {
     "READ_MORE": "Read more..."
   },
