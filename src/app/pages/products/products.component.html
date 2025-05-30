@@ -1,16 +1,19 @@
 <div class="product-card">
   <!-- პროდუქტის ფოტო -->
   <div class="product-image-wrapper">
-    <img [src]="product.imageUrl || 'default-image.jpg'" alt="{{ product.name }}" class="product-image" (error)="handleImageError($event)">
+    <img [src]="product.imageUrl || defaultImage"
+         alt="{{ 'PRODUCTS.' + product.id + '.NAME' | translate }}"
+         class="product-image"
+         (error)="handleImageError($event)">
     <div class="image-overlay"></div>
   </div>
 
   <!-- პროდუქტის ინფორმაცია -->
   <div class="product-info">
-    <h2>{{ product.name }}</h2>
-    <p>{{ product.description }}</p>
+    <h2>{{ 'PRODUCTS.' + product.id + '.NAME' | translate }}</h2>
+    <p>{{ 'PRODUCTS.' + product.id + '.DESCRIPTION' | translate }}</p>
     <button (click)="goToDetail()">
-      დეტალური ძებნა
+      {{ 'PRODUCTS.DETAIL_BUTTON' | translate }}
       <svg class="arrow-icon" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>

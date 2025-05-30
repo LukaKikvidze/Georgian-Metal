@@ -50,6 +50,15 @@
     "IMAGE_ALT": "Factory image"
   },
 
+  "PRODUCTS": {
+    "123": {
+      "NAME": "Rebar",
+      "DESCRIPTION": "B500B, DIN 448.1."
+    },
+    "DETAIL_BUTTON": "View Details"
+  },
+
+
   "CAREER_SECTION": {
     "TITLE": "Career",
     "WHY": "Why Georgia Metal?",

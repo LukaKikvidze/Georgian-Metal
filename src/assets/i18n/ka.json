@@ -49,7 +49,16 @@
     "IMAGE_ALT": "ქარხნის სურათი"
   },
 
-  "CAREER_SECTION": {
+  "PRODUCTS": {
+    "123": {
+      "NAME": "არმატურა",
+      "DESCRIPTION": "B500B, DIN 448.1."
+    },
+    "DETAIL_BUTTON": "დეტალური ძებნა"
+  },
+
+
+"CAREER_SECTION": {
     "TITLE": "კარიერა",
     "WHY": "რატომ Georgia Metal?",
     "WHY_TEXT": "Georgia Metal გამოირჩევა მაღალი ხარისხის ლითონის პროდუქციით, თანამედროვე ტექნოლოგიებითა და კვალიფიციური კადრებით.",
@@ -60,7 +69,7 @@
   },
 
   "PARTNERS_SECTION": {
-    "READ_MORE": "სრულად..."
+    "READ_MORE ": "სრულად..."
   },
 
   "GALLERY": {
