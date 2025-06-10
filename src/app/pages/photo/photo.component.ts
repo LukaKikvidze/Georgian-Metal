@@ -9,6 +9,40 @@ import { HostListener } from '@angular/core';
 })
 export class PhotoComponent {
   images: string[] = [
+    'assets/gallery-images/DJI_0107.webp',
+    'assets/gallery-images/DJI_0110.webp',
+    'assets/gallery-images/DJI_0111.webp',
+    'assets/gallery-images/DJI_0121.webp',
+    'assets/gallery-images/DJI_0122.webp',
+    'assets/gallery-images/DJI_0123.webp',
+    'assets/gallery-images/DJI_0124.webp',
+    'assets/gallery-images/DJI_0125.webp',
+    'assets/gallery-images/DJI_0128.webp',
+    'assets/gallery-images/DJI_0129.webp',
+    'assets/gallery-images/DJI_0130.webp',
+    'assets/gallery-images/DSC09651.webp',
+    'assets/gallery-images/DSC09653.webp',
+    'assets/gallery-images/DSC09655.webp',
+    'assets/gallery-images/DSC09657.webp',
+    'assets/gallery-images/DSC09660.webp',
+    'assets/gallery-images/DSC09661.webp',
+    'assets/gallery-images/DSC09663.webp',
+    'assets/gallery-images/DSC09664.webp',
+    'assets/gallery-images/DSC09666.webp',
+    'assets/gallery-images/DSC09668.webp',
+    'assets/gallery-images/DSC09673.webp',
+    'assets/gallery-images/DSC09676.webp',
+    'assets/gallery-images/DSC09677.webp',
+    'assets/gallery-images/DSC09678.webp',
+    'assets/gallery-images/DSC09683.webp',
+    'assets/gallery-images/DSC09685.webp',
+    'assets/gallery-images/DSC09687.webp',
+    'assets/gallery-images/DSC09688.webp',
+    'assets/gallery-images/DSC09690.webp',
+    'assets/gallery-images/DSC09693.webp',
+    'assets/gallery-images/DSC09694.webp',
+
+
     'assets/gallery-images/1.jpeg',
     'assets/gallery-images/2.jpeg',
     'assets/gallery-images/3.jpeg',
@@ -43,7 +77,6 @@ export class PhotoComponent {
     'assets/gallery-images/32.jpeg',
     'assets/gallery-images/33.jpeg'
   ];
-
 
   selectedImage: string | null = null;
   currentIndex = 0;
