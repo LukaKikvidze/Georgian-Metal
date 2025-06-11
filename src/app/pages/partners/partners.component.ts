@@ -8,15 +8,14 @@ import { Component, QueryList, ViewChildren, ElementRef, AfterViewInit } from '@
 })
 export class PartnerComponent implements AfterViewInit {
   partners = [
-    { name: 'GTM Group', img: 'assets/partners/GTM.jpg' },
-    { name: 'Poladis sakhli', img: 'assets/partners/steelhouse.png' },
-    { name: 'First Commodities DMCC', img: 'assets/partners/DMCC.jpg' },
-    { name: 'Stemcor Group', img: 'assets/partners/stemcor.png' },
-    { name: 'Steelco for Steel Trading', img: 'assets/partners/stemcorft.png' },
-    { name: 'Bank of Georgia', img: 'assets/partners/BOG.jpg' },
-    { name: 'Delta Steel', img: 'assets/partners/deltasteel.jpg' },
-    { name: 'Georgian Railway', img: 'assets/partners/GR.png' }
+    { id: 1, name: 'ევროსტილი', img: 'assets/images/eurosteal.jpg', website: 'https://eurosteel.ge/ka' },
+    { id: 2, name: 'ციტადელი', img: 'assets/images/aa.png', website: 'https://citadeli.com/ka' },
+    { id: 3, name: 'ლეგია 2007', img: 'assets/images/legia.jpg', website: '#' },
+    { id: 4, name: 'ჯი არ სი', img: 'assets/images/grc.png', website: 'https://grc.ge' },
+    { id: 5, name: 'BK Construction', img: 'assets/images/constr.png', website: 'https://bkconstruction.ge' }
   ];
+
+
 
   @ViewChildren('partnerCard') partnerCards!: QueryList<ElementRef>;
 
